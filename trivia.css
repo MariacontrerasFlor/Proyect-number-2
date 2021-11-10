@@ -1,0 +1,402 @@
+body{
+    height: 100%; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(https://c.tenor.com/uUv7ARAgUeQAAAAd/hieroglyphics-movement.gif);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }
+    
+  
+  
+  .contact_form{
+    width: 560px; 
+    height: 600px;
+    margin: 80px auto;
+    border-radius: 10px;  
+    padding-top: 30px;
+    padding-bottom: 20px;  
+    background-image: url(https://previews.123rf.com/images/kues/kues1310/kues131000635/23324155-c%C3%A1lida-textura-de-piedra-caliza.jpg);
+    padding-left: 30px; 
+    }          
+
+
+    #main-header {
+      background: #333;
+      color: white;
+      height: 80px;
+      
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: fixed;
+      font-size: medium;
+    }	
+      #main-header a {
+        color: white;
+      }
+      
+    
+    #logo-header {
+      float: left;
+      padding: 15px 0 0 20px;
+      text-decoration: none;
+    }
+      #logo-header:hover {
+        color: #0a415aaf;
+      }
+      
+      #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+      
+      #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #999;
+      }
+      
+    
+   
+    nav {
+      float: right;
+    }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+      }
+      
+        nav ul li {
+          display: inline-block;
+          line-height: 80px;
+        }
+          
+          nav ul li a {
+            display: block;
+            padding: 0 10px;
+            text-decoration: none;
+          }
+          
+            nav ul li a:hover {
+              background: #0b75a669;
+            }
+      
+    
+
+    #main-content {
+      background: white;
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(0,0,0,.1);
+    }
+    
+      #main-content header,
+      #main-content .content {
+        padding: 40px;
+      }
+      
+    
+  
+      #main-footer {
+        background: #333;
+        color: rgb(10, 10, 10);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+        #main-footer p {
+          margin: 0;
+        }
+        
+        #main-footer a {
+          color: rgb(236, 234, 234);
+        }
+
+        :root{
+          --color-main: rgb(3, 3, 3);
+          --color-secondary: rgb(76, 90, 85);
+          --color-placeholder-main: #070707;
+          --color-placeholder-secondary: #E9E4F0;
+          --color-white: rgb(2, 2, 2);
+          --color-gradient: linear-gradient( 91.7deg, rgba(50,25,79,0.75) -4.3%, rgba(33, 23, 82,0.75) 101.8% );
+          --font-main: 'Comfortaa', cursive;
+          --font-secondary: 'Roboto', sans-serif;
+      }
+      
+      *{
+        box-sizing: border-box;
+    }
+    
+   
+    
+    
+    footer{
+        text-align: center;
+    }
+    
+    h1{
+        font-size: 1.5rem;
+    }
+    
+    main{
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /****************** Main container ************/
+    .container{
+        display: flex;
+        flex-grow: 1;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    #message{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        padding: 2rem;
+    }
+    
+    #message > *{
+        width:100%;
+    }
+    
+    .btnGroup{
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+    }
+    
+    /***************** Forms Components ***********/
+    label{
+        font-weight: 400;
+        margin-bottom: 0.5rem;
+        font-family: var(--font-main);
+    }
+    
+    span{
+        font-size: 0.8rem;
+        margin-top: 0.5rem;
+        margin-bottom: 1rem;
+        text-align: end;
+    }
+    
+    textarea{
+        resize: none;
+        border-radius: 10px;
+        padding: 10px;
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+        height: 12rem;
+        background-color: transparent;
+        border: 0.15rem solid var(--color-secondary);
+        color: var(--color-white);
+    }
+    
+    textarea:focus-visible{
+        outline: none;
+        box-shadow: 0 0 0.5rem var(--color-secondary);
+    }
+    
+    textarea::-webkit-scrollbar {
+        width: 0.5rem;
+        border-radius: 10px;
+    }
+    
+    textarea::-webkit-scrollbar-track {
+        border-radius: 10px;
+        background-color:#0a415aaf;
+    }
+    
+    textarea::-webkit-scrollbar-thumb {
+        border-radius: 10px;
+        background-color: var(--color-white);
+    }
+    
+    textarea::placeholder{
+        color: var(--color-placeholder-main);
+        color: -webkit-linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+        color: linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+    }
+    
+    input[type="number"] {
+        font-family: var(--font-secondary);
+        font-weight: 300;
+        font-size: 1rem;
+        text-align: center;
+        color: var(--color-white);
+        background-color: transparent;
+        border: 0.15rem solid var(--color-secondary);
+        border-radius: 10px;
+        padding: 0.5rem 0.5rem;
+        margin-bottom: 1.3rem;
+    }
+    
+    input[type="number"]::placeholder{
+        background-color: #0a415aaf;
+        color: -webkit-linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+        color: linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+    }
+    
+    input[type="number"]:focus-visible{
+        outline: none;
+        box-shadow: 0 0 0.5rem var(--color-secondary);
+    }
+    
+    button{
+        
+        font-weight: 700;
+        font-size: 0.75rem;
+        cursor: pointer;
+        padding: 1rem 1rem;
+        border-radius: 10px;
+        background-color: #0a415aaf;
+        color: var(--color-white);
+        border: none;
+        margin-bottom: 0.5rem;
+        width: 100%;
+    }
+    
+    button:hover{
+        background-color:#0a415aaf;
+        box-shadow:none;
+    }
+    button#copy{
+        border-top-left-radius: 0px;
+        border-top-right-radius: 0px;
+        width: 100%;
+    }
+    
+    textarea#msgResult{
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+        padding: 0.5rem;
+        margin-bottom: 0;
+    }
+    
+    textarea#msgResult:focus-visible{
+        outline-color: transparent;
+        padding: 0.5rem;
+    }
+    
+    /******************* Container-modal ***************/
+    
+    .modalContainer{
+        position: fixed;
+        width: 100%;
+        min-height: 100vh;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .containerClose{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .modal{
+        background-color: var(--color-main);
+        width: 80%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        border-radius: 10px;
+        padding: 0.5rem;
+        animation: open 0.5s forwards;
+    }
+    
+    .modalClose{
+        animation: close 0.5s forwards;
+    }
+    
+    #close{
+        margin: 5px 5px 0px 0px;
+        align-self: flex-end;
+        width: 25px;
+        height:  25px;
+        background-color: transparent;
+        font-size: 1.5rem;
+        color: var(--color-white);
+        line-height: 25px;
+        cursor: pointer;
+        border-radius: 10px;
+    }
+    
+    /* Modal Animation*/
+    @keyframes open{
+        0%{
+            transform: scale(0);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        70%{
+            transform: scale(0.95);
+        }
+        95%{
+            transform: scale(1.1);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+    
+    @keyframes close{
+        100%{
+            transform: translateY(-100vh) scale(0);
+        }
+        50%{
+            transform: scale(1.2);
+        }
+        30%{
+            transform: scale(0.95);
+        }
+        5%{
+            transform: scale(1.1);
+        }
+        0%{
+            transform: scale(1);
+        }
+    }
+    
+    /* Media query*/
+    @media (min-width: 200px){
+        h1{
+            font-size: 2rem;
+        }
+    }
+    @media (min-width: 400px){
+        button{
+            width: 49%;
+        }
+    }
+    @media (min-width: 768px){
+        #message{
+            width: 70%;
+        }
+        button{
+            width: 49%;
+            font-size: 1rem;
+        }
+    }
+    
