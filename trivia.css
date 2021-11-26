@@ -1,0 +1,462 @@
+/*body{
+    height: 100%; 
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    background-image: url(https://pa1.narvii.com/6848/cccf413ac69fdf1224fd4ecd3e4f4557c5bede3b_hq.gif);
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+  }*/
+  h2{
+      font-family: 'Courier New', Courier, monospace;
+      color:white;
+      font-size: 20px;
+      font-style: initial;
+  }
+    
+ label{
+      font-family:"monospace";
+      font-size: 30px;
+      color:  rgb(5, 5, 5);
+  }
+  :root{
+    --color-main: rgb(17, 17, 19);
+    --color-secondary: rgb(8, 8, 8);
+    --color-placeholder-main: #e3def0;
+    --color-placeholder-secondary: #E9E4F0;
+    --color-white: #fff;
+    --color-gradient: linear-gradient( 91.7deg, rgba(8, 7, 8, 0.75) -4.3%, rgba(33, 23, 82,0.75) 101.8% );
+    --font-main: 'Comfortaa', cursive;
+    --font-secondary: sans-serif;
+}
+  
+  .container{
+    width: 780px; 
+    height: 675px;
+    margin: 70px auto;
+    border-radius: 20px;  
+    padding-top: 0px;
+    padding-bottom: 0px; 
+    padding-left: 0px;
+    color: rgb(245, 238, 238);
+    background-color: transparent;
+    
+    }          
+
+
+    #main-header {
+      background:  rgb(10, 10, 10);
+      color: rgb(240, 233, 233);
+      height: 80px;
+      
+      width: 100%;
+      left: 0;
+      top: 0;
+      position: fixed;
+      font-size:30px;
+    }	
+      #main-header a {
+        color: white;
+      }
+      
+    
+    #logo-header {
+      float: left;
+      padding: 15px 0 0 20px;
+      text-decoration: none;
+    }
+      #logo-header:hover {
+        color: #dae4e9af;
+      }
+      
+      #logo-header .site-name {
+        display: block;
+        font-weight: 700;
+        font-size: 1.2em;
+      }
+      
+      #logo-header .site-desc {
+        display: block;
+        font-weight: 300;
+        font-size: 0.8em;
+        color: #999;
+      }
+      
+    
+   
+    nav {
+      float: right;
+    }
+      nav ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        padding-right: 20px;
+      }
+      
+        nav ul li {
+          display: inline-block;
+          line-height: 80px;
+        }
+          
+          nav ul li a {
+            display: block;
+            padding: 0 10px;
+            text-decoration: none;
+          }
+          
+            nav ul li a:hover {
+              background:  rgb(20, 20, 20);
+            }
+      
+    
+
+    #main-content {
+      background-color: rgb(15, 15, 15);
+      width: 90%;
+      max-width: 800px;
+      margin: 20px auto;
+      box-shadow: 0 0 10px rgba(68, 36, 143, 0.1);
+    }
+    
+      #main-content header,
+      #main-content .content {
+        padding: 40px;
+      }
+      
+    
+  
+      #main-footer {
+        background: rgb(4, 1, 10);
+        color: rgb(230, 219, 219);
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+      }
+     
+        #main-footer p {
+          margin: 0;
+    }          
+
+        #main-footer a {
+          color: rgb(236, 234, 234);
+        }
+
+       
+        
+        *{
+            box-sizing: border-box;
+        }
+        
+        body{
+            margin: 0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            font-family: sans-serif;
+            background-image: url(https://c.wallhere.com/photos/35/9a/symbols_archeology_Egypt_writing_hieroglyphics-51336.jpg!d);
+            background-size: cover;
+        
+        }
+        
+       
+        
+        footer{
+            text-align: center;
+        }
+        
+        h1{
+            font-size: 1.5rem;
+        }
+        
+        main{
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .container{
+            display: flex;
+            flex-grow: 1;
+            width: 100%;
+            justify-content: center;
+            font-family: sans-serif;
+        }
+        
+        #message{
+            width: 100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 2rem;
+            font-family:sans-serif;
+            color: white;
+        }
+        .linio{
+            width:100%;
+            display: flex;
+            flex-flow: column wrap;
+            justify-content: center;
+            padding: 2rem;
+            font-family:sans-serif;
+            color: white;
+            align-items: center;
+
+        }
+
+    
+        
+        #message > *{
+            width:100%;
+        }
+        
+        .btnGroup{
+            display: flex;
+            justify-content: space-between;
+            flex-flow: row wrap;
+        }
+        
+        
+        label{
+            font-weight: 400;
+            margin-bottom: 0.5rem;
+            font-family: var(--font-main);
+        }
+        
+        span{
+            font-size: 0.8rem;
+            margin-top: 0.5rem;
+            margin-bottom: 1rem;
+            text-align: end;
+        }
+        
+        textarea{
+            resize: none;
+            border-radius: 10px;
+            padding: 10px;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 300;
+            font-size: 1rem;
+            height: 12rem;
+            background-color: transparent;
+            border: 0.15rem solid var(--color-secondary);
+            color: var(--color-white);
+        }
+        
+        textarea:focus-visible{
+            outline: none;
+            box-shadow: 0 0 0.5rem var(--color-secondary);
+        }
+        
+        textarea::-webkit-scrollbar {
+            width: 0.5rem;
+            border-radius: 10px;
+        }
+        
+        textarea::-webkit-scrollbar-track {
+            border-radius: 10px;
+            background-color:var(--color-secondary);
+        }
+        
+        textarea::-webkit-scrollbar-thumb {
+            border-radius: 10px;
+            background-color: var(--color-white);
+        }
+        
+        textarea::placeholder{
+            color: var(--color-placeholder-main);
+            color: -webkit-linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+            color: linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+        }
+        
+        input[type="number"] {
+            font-family:'Courier New', Courier, monospace;
+            font-weight: 300;
+            font-size: 1rem;
+            text-align: center;
+            color: var(--color-white);
+            background-color: transparent;
+            border: 0.15rem solid var(--color-secondary);
+            border-radius: 10px;
+            padding: 0.5rem 0.5rem;
+            margin-bottom: 1.3rem;
+        }
+        
+        input[type="number"]::placeholder{
+            color: var(--color-placeholder-main);
+            color: -webkit-linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+            color: linear-gradient(to right, var(--color-placeholder-secondary), var(--color-placeholder-main));
+        }
+        
+        input[type="number"]:focus-visible{
+            outline: none;
+            box-shadow: 0 0 0.5rem var(--color-secondary);
+        }
+        
+        button{ font-family: var(--font-main);
+            font-weight: 10px;
+            font-size: /*0.75rem*/ 14px;
+            cursor: pointer;
+            padding: /*1rem 1rem*/ 8px;
+            border-radius: 10px;
+            background-color:black;
+            color: var(--color-white);
+            border: none;
+            margin-bottom: 0.5rem;
+            width: 8px;
+           
+        }
+        
+        .bruja {font-family: var(--font-main);
+            font-weight: 20px;
+            font-size: /*0.75rem*/ 14px;
+            cursor: pointer;
+            padding: /*1rem 1rem*/ 8px;
+            border-radius: 10px;
+            background-color:rgb(243, 234, 234);
+            color: var(--color-white);
+            border: none;
+            margin-bottom: none;
+            width: 10px;}
+
+        button:hover{
+            background-color: var(--color-secondary);
+            box-shadow: 0 0 0.5rem var(--color-secondary);
+        }
+        
+        button#copy{
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            width: 100%;
+        }
+        
+        textarea#msgResult{
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+            padding: 0.5rem;
+            margin-bottom: 0;
+        }
+        
+        textarea#msgResult:focus-visible{
+            outline-color: transparent;
+            padding: 0.5rem;
+        }
+        
+        /*/container*/
+        
+        .modalContainer{
+            position: fixed;
+            width: 100%;
+            min-height: 100vh;
+            top: 0;
+            left: 0;
+            background: rgba(0,0,0,0.5);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .containerClose{
+            opacity: 0;
+            visibility: hidden;
+        }
+        
+        .modal{
+            background-color: var(--color-main);
+            width: 80%;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            border-radius: 10px;
+            padding: 0.5rem;
+            animation: open 0.5s forwards;
+        }
+        
+        .modalClose{
+            animation: close 0.5s forwards;
+        }
+        
+        #close{
+            margin: 5px 5px 0px 0px;
+            align-self: flex-end;
+            width: 25px;
+            height:  25px;
+            background-color: transparent;
+            font-size: 1.5rem;
+            color: var(--color-white);
+            line-height: 25px;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        
+        /* Modal Animation*/
+       @keyframes open{
+            0%{
+                transform: scale(0);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            70%{
+                transform: scale(0.95);
+            }
+            95%{
+                transform: scale(1.1);
+            }
+            100%{
+                transform: scale(1);
+            }
+        }
+        
+        @keyframes close{
+            100%{
+                transform: translateY(-100vh) scale(0);
+            }
+            50%{
+                transform: scale(1.2);
+            }
+            30%{
+                transform: scale(0.95);
+            }
+            5%{
+                transform: scale(1.1);
+            }
+            0%{
+                transform: scale(1);
+            }
+        }
+        
+        /* Media query*/
+        @media (min-width: 200px){
+            h1{
+                font-size: 2rem;
+            }
+        }
+        @media (min-width: 400px){
+            button{
+                width: 49%;
+            }
+        }
+        @media (min-width: 768px){
+            #message{
+                width: 70%;
+            }
+            button{
+                width: 49%;
+                font-size: 1rem;
+            }
+        } */
+        .preloader {
+            background-image: url(https://pa1.narvii.com/6589/adbee405b951d5f02ec3ad41e233b79371cd70c1_hq.gif);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 100%;
+            }
+        
+        
